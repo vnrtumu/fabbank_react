@@ -1,0 +1,8 @@
+.table{
+    height:300px;
+    overflow-x: scroll;
+}
+
+.table td:empty{
+    background-color: #90daa159;
+}
