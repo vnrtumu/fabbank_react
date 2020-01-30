@@ -221,7 +221,7 @@ class Table extends Component{
         const { data1 } = this.state
         let { columns,rows } = data1
         // const {rows} = this.state.data1
-        axios.get(`/api/displayAllMerchants`)
+        axios.get(`http://fabbank.ml/api/displayAllMerchants`)
         .then(res=>{
             console.log(res);
             const {success} = res.data

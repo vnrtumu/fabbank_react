@@ -15,10 +15,10 @@ function App() {
        <Router>
         <Switch>
 
-        <Route path='' component={Basic} exact/>
-        <Route path="table" component={Table} exact/>
-        <Route path="table/:id" component={Data} exact />
-        <Route path="displaydata/:id" component={DisplayData} />
+        <Route path='/' component={Basic} exact/>
+        <Route path="/table" component={Table} exact/>
+        <Route path="/table/:id" component={Data} exact />
+        <Route path="/displaydata/:id" component={DisplayData} />
         
 
         </Switch>

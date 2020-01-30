@@ -58,7 +58,7 @@ class Basic extends Component {
     const data = new FormData() 
     data.append('select_file', this.state.selectedFile)
     
-    axios.post(`/api/import`,data)
+    axios.post(`http://fabbank.ml/api/import`,data)
     .then(res=>{
       console.log(res);
       const {success,logdata,status} = res.data;

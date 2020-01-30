@@ -40,7 +40,7 @@ class DisplayData extends Component{
         const data ={
          merchant_id:this.props.match.params.id
         }
-        axios.post(`/api/showSingleMerchant`,data)
+        axios.post(`http://fabbank.ml/api/showSingleMerchant`,data)
         .then(res=>{
             console.log(res);
             const {success} = res.data;

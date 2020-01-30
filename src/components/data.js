@@ -42,7 +42,7 @@ class Data extends Component{
        const data ={
         merchant_id:this.props.match.params.id
        }
-       axios.post(`/api/showSingleMerchant`,data)
+       axios.post(`http://fabbank.ml/api/showSingleMerchant`,data)
        .then(res=>{
            console.log(res);
            const {success} = res.data;
@@ -88,7 +88,7 @@ class Data extends Component{
             services:this.state.data.services,
             twitter_handle:this.state.data.twitter_handle
         }
-        axios.post(`/api/updateMerchantDetails`,details)
+        axios.post(`http://fabbank.ml/api/updateMerchantDetails`,details)
         .then(res=>{
             console.log(res)
             const {success} = res.data
@@ -127,7 +127,7 @@ class Data extends Component{
         const data ={
          merchant_id:this.props.match.params.id + 1
         }
-        axios.post(`/api/showSingleMerchant`,data)
+        axios.post(`http://fabbank.ml/api/showSingleMerchant`,data)
         .then(res=>{
             console.log(res);
             const {success} = res.data;
